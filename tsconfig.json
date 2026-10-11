@@ -1,0 +1,16 @@
+{
+    "extends": [
+        "@tsconfig/node26/tsconfig.json",
+        "@tsconfig/node-ts/tsconfig.json"
+    ],
+    "compilerOptions": {
+        "lib": ["es2025", "ESNext.Array", "ESNext.Collection", "ESNext.Temporal"],
+        "noEmit": true,
+        "types": ["node", "vitest/globals"]
+    },
+    "include": [
+        "src/**/*",
+        "test/**/*",
+        "vitest.config.ts"
+    ]
+}
